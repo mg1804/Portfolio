@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mridula Ganesan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Milestones">Milestones</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mridula Ganesan</div>
+        <div class="hamburger-menu ">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/MGPic.jpg" alt="Dhinesh Ravikumar profile picture">   <!-- Profile picture-->
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Mridula Ganesan</h1> <!-- Name -->
+            <p class="section_text_p2">Product Program Manager (PPM)</p> <!-- Role -->
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/Resume_Portfolio.pdf')"> <!-- Resume -->
+                Open CV</button>
+
+                <button 
+                class="btn btn-color-2" 
+                onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/mridula1804/'"  
+                /> <!-- Linked Link -->
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">About me</p>
+        <h1 class="title">My Journey in Building with Purpose</h1>
+        <div class="section-container">
+            <div class="section_pic-container_1">
+                <img src="./assets/fin.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container" style="margin-left: 150px;">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Product x Program</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Master of Engineering Management - Product Management</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p style="text-align: justify;">
+                        I started out decoding DNA. Now, I decode user needs, workflows, and backlogs. With roots in Biotechnology, I’ve always been drawn to systems—whether cellular or software. That curiosity led me from labs to launchpads, where I’ve since managed over 15 <b>product and strategy projects</b> across startups, <b>healthtech</b>, and <b>AI in education</b>. Whether it’s mapping out <b>care flows</b> for caregivers, designing <b>wireframes</b> that reduce cognitive load, or translating chaos into clarity on <b>JIRA boards</b>—I build with intention. Today, I’m a <b>Product/Program Manager-in-progress</b> at Duke, bringing together <b>science, design, and execution</b> to create solutions that don’t just work—they make sense.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='.#Milestones'">   
+    </section>
+    <section id="Milestones">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Milestones</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container_1">
+                    <h3 class="experience-sub-title">Unifying Engineering & Product Without Saying “No”</h3>
+                    <div class="article-container">
+                        <article_1>
+                            <div class="card-body">
+                                <p>In a cross-functional project, engineering had a technical refactor plan, while product had a roadmap of feature demands—and both were right. I created a hybrid “Effort vs. Value Matrix” that layered tech debt resolution into our feature prioritization. It got both teams nodding, aligned timelines, and unlocked a roadmap everyone believed in.</p>
+                            </div>
+                        </article_1>                        
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://v0-minimalist-blog-page.vercel.app/'">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container_1">
+                    <h3 class="experience-sub-title">Caring for the Caregivers: Redesigning Beyond the Patient</h3>
+                    <div class="article-container">
+                        <article_1>
+                            <div class="card-body">
+                                <p>Most healthcare tools focus on patients—but what about the people doing the documenting? In this story, I share how a simple shift in perspective led to smarter workflows, happier caregivers, and a 40% boost in documentation efficiency.</p>
+                            </div>
+                        </article_1>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://v0-asa-life-care-blog.vercel.app/'">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='.#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Product Management Tools & Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Jira</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Confluence</h3>
+                                <p>Intermideate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Agile</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Roadmap Planning</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Feature Prioritization</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Analytics <br> Tools & Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Tableau & Power Bi</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>SQL & Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3> RESTful APIs & Postman</h3>
+                                <p>Intermideate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>AWS & Azure</h3>
+                                <p>Intermideate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git, CI/CD, Kubernetes & Docker</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='.#projects'">   
+    </section>
+    <section id="framework">
+        <p class="section_text_p1">My Approach</p>
+        <h1 class="title">The LENS Framework for Building Meaningful Products</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container_1 color-container">
+              <div class="article-container">
+                <h3 class="experience-sub-title">L – Listen to the System</h3>
+                <p>I start by understanding real needs — through data, user interviews, or system analysis. Whether it’s clinician surveys or user journey audits, every product tells a story if you’re willing to listen.</p>
+              </div>
+            </div>
+            <div class="details-container_1 color-container">
+              <div class="article-container">
+                <h3 class="experience-sub-title">E – Empathize with Stakeholders</h3>
+                <p>My solutions begin with empathy. I map goals, frictions, and motivations of everyone involved — from developers to caregivers — to create alignment and build trust in every interaction.</p>
+              </div>
+            </div>
+            <div class="details-container_1 color-container">
+              <div class="article-container">
+                <h3 class="experience-sub-title">N – Navigate the Trade-offs</h3>
+                <p>I bring clarity where priorities collide. By aligning effort with value, I help teams make intentional decisions, balance technical debt with delivery, and move forward with confidence.</p>
+              </div>
+            </div>
+            <div class="details-container_1 color-container">
+              <div class="article-container">
+                <h3 class="experience-sub-title">S – Scale What Works</h3>
+                <p>I close the loop by scaling the proven. Whether through automation, playbooks, or dashboards, I turn insight into repeatable programs that drive results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container" style="text-align:center; margin-top: 20px;">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://your-vercel-link-here.vercel.app/'">Learn More</button>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='.#experience'">
+      </section>
+      
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container_1 color-container">
+                <div class="article-container">
+                    <img src="./assets/ThinkSync-logo.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">ThinkSync: Empowering Teams to Brainstorm Better</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://v0-think-sync-landing-page.vercel.app/'">Click Here</button>
+                </div>
+            </div>
+           <div class="details-container_1 color-container">
+                <div class="article-container">
+                    <img src="./assets/retail.webp" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Optimizing
+                    Retail Media
+                    Network (RMN)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://v0-professional-blog-design-pi.vercel.app/'">Click Here</button>
+                </div>
+            </div>
+           <!--- <div class="details-container_1 color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
+                </div>
+            </div> -->
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='.#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:mg605@duke.edu">mg605@duke.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="www.linkedin.com/in/mridula1804">linkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Milestones">Milestones</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Mridula Ganesan. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
